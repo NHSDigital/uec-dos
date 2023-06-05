@@ -1,12 +1,12 @@
-# Repository Template
+# uec dos
 
-Start with an overview or a brief description of what the project is about and what it does.
+The Directory of Services (DOS) provides a searchable catalog of healthcare services appropriate to a person's urgent and emergency care (UEC) needs. It consists of a UI for data administrators and a number of APIs to interrogate the data and return appropriate services
 
 There is an expectation that each file of this repository template is concise and self-documented.
 
 ## Table of Contents
 
-- [Repository Template](#repository-template)
+- [uec dos](#uec-dos)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
     - [Prerequisites](#prerequisites)
