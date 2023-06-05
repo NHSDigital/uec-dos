@@ -34,7 +34,7 @@ function check_git_branch_name {
 function check_git_branch_name_format {
     BUILD_BRANCH="$1"
     if [ $BUILD_BRANCH != 'main' ] && ! [[ $BUILD_BRANCH =~ $GIT_BRANCH_PATTERN ]]  ; then
-      echo $BUILD_BRANCH does not match the naming pattern
+      echo Branch $BUILD_BRANCH does not match the naming pattern
     fi
 }
 
