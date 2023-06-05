@@ -11,6 +11,5 @@ jobs:
         with:
           fetch-depth: 0
       - run: |
-          export BRANCH_NAME=origin/${{ github.event.repository.default_branch }}
           export PRECOMMIT=false
           run: ./scripts/githooks/terraform-pre-commit.sh
