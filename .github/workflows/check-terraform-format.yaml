@@ -12,4 +12,4 @@ jobs:
           fetch-depth: 0
       - run: |
           export PRECOMMIT=false
-          run: ./scripts/githooks/terraform-pre-commit.sh
+          ./scripts/githooks/terraform-pre-commit.sh
