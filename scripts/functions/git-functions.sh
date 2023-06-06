@@ -24,9 +24,9 @@ function git-check-if-commit-changed-directory {
 function check_git_branch_name {
     VALID_FORMAT=$(check_git_branch_name_format $1)
     VALID_LENGTH=$(check_git_branch_name_length $1)
-    [[ ! -z "$VALID_FORMAT" ]] && echo $VALID_FORMAT
-    [[ ! -z "$VALID_LENGTH" ]] && echo $VALID_LENGTH
     if [[ ! -z "$VALID_LENGTH" || ! -z "$VALID_FORMAT" ]] ; then
+      [[ ! -z "$VALID_FORMAT" ]] && echo $VALID_FORMAT
+      [[ ! -z "$VALID_LENGTH" ]] && echo $VALID_LENGTH
       exit 1
     fi
 }
@@ -48,9 +48,9 @@ function check_git_branch_name_length {
 function check_git_commit_message {
     VALID_FORMAT=$(check_commit_message_format "$1")
     VALID_LENGTH=$(check_commit_message_length "$1")
-    [[ ! -z "$VALID_FORMAT" ]] && echo $VALID_FORMAT
-    [[ ! -z "$VALID_LENGTH" ]] && echo $VALID_LENGTH
     if [[ ! -z "$VALID_LENGTH" || ! -z "$VALID_FORMAT" ]] ; then
+      [[ ! -z "$VALID_FORMAT" ]] && echo $VALID_FORMAT
+      [[ ! -z "$VALID_LENGTH" ]] && echo $VALID_LENGTH
       exit 1
     fi
 }

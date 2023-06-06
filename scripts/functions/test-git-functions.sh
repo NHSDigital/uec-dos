@@ -50,6 +50,7 @@ export BUILD_COMMIT_MESSAGE="DR-1 My valid commit message"
 if [[ $? = 0 ]]; then
     all_pass=1
 fi
+
 # invalid comment - no jira ref
 export BRANCH_NAME=task/DPTS-2211_My_valid_branch
 export BUILD_COMMIT_MESSAGE="My invalid commit message"
