@@ -12,7 +12,7 @@ function main {
     docker run \
       --volume=$PWD:/scan \
       --workdir=/scan \
-		  hashicorp/terraform:$TF_VERSION $cmd
+      hashicorp/terraform:$TF_VERSION $cmd
   fi
 
 }
