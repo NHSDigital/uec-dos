@@ -49,7 +49,7 @@ Most of the projects are built with customisability and extendability in mind. A
 
 ## Contributing
 
-To ensure consistency and turn on the required githooks contributors must run the following script from the project root
+To ensure consistency and turn on the required githooks contributors must run the following script from the project root see below
 
 /bin/bash scripts/git/git-config-set-up.sh
 
