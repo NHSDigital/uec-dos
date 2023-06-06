@@ -27,7 +27,7 @@ function check_git_branch_name {
     if [[ ! -z "$VALID_LENGTH" || ! -z "$VALID_FORMAT" ]] ; then
       [[ ! -z "$VALID_FORMAT" ]] && echo $VALID_FORMAT
       [[ ! -z "$VALID_LENGTH" ]] && echo $VALID_LENGTH
-      exit 1
+      return 1
     fi
 }
 
@@ -51,7 +51,7 @@ function check_git_commit_message {
     if [[ ! -z "$VALID_LENGTH" || ! -z "$VALID_FORMAT" ]] ; then
       [[ ! -z "$VALID_FORMAT" ]] && echo $VALID_FORMAT
       [[ ! -z "$VALID_LENGTH" ]] && echo $VALID_LENGTH
-      exit 1
+      return 1
     fi
 }
 

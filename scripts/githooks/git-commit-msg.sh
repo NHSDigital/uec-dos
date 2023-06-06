@@ -11,7 +11,5 @@ BUILD_COMMIT_MESSAGE=${BUILD_COMMIT_MESSAGE:-"$(cat $1)"}
 #[ $? != 0 ] && exit_code=1 ||:
 # echo $exit_code
 check_git_commit_message "$BUILD_COMMIT_MESSAGE"
-echo $?
 [ $? != 0 ] && exit_code=1 ||:
-echo $exit_code
 exit $exit_code
