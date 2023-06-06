@@ -1,6 +1,6 @@
 #!/bin/bash
 source ./scripts/functions/git-functions.sh
-set -e
+# set -e
 
 exit_code=0
 BUILD_COMMIT_MESSAGE=${BUILD_COMMIT_MESSAGE:-"$(cat $1)"}
