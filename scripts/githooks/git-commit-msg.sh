@@ -1,6 +1,6 @@
 #!/bin/bash
 source ./scripts/functions/git-functions.sh
-# set -e
+set -e
 
 exit_code=0
 #BRANCH_NAME=${BRANCH_NAME:-$(git rev-parse --abbrev-ref HEAD)}
