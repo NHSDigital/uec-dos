@@ -5,7 +5,6 @@ source ./scripts/functions/git-functions.sh
 BUILD_COMMIT_MESSAGE=${BUILD_COMMIT_MESSAGE:-"$(cat $1)"}
 
 check_git_commit_message "$BUILD_COMMIT_MESSAGE"
-echo $?
-echo twr
-exit 1
+
+exit $?
 
