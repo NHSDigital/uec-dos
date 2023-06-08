@@ -2,7 +2,7 @@
 source ./scripts/functions/git-functions.sh
 set -e
 
-# https://black.readthedocs.io/en/stable/
+# https://flake8.pycqa.org/en/6.0.0/
 
 PYTHON_FLAKE_IMAGE=6.0.0@sha256:bab9cabdf9ac8bfccf9da9bc0733037d516cd8389545f8b944305f79b4219411
 PRECOMMIT=${PRECOMMIT:-true}
@@ -11,7 +11,7 @@ BRANCH_NAME=${BRANCH_NAME:-$(git rev-parse --abbrev-ref HEAD)}
 
 function main {
   if [[ $(git-check-if-commit-changed-directory $PRECOMMIT $BRANCH_NAME $CODE_DIR) ]] ; then
-    cmd="--select F841 ."
+    cmd="--max-line-length 120 ."
     docker run \
       --volume=$PWD:/scan \
       --workdir=/scan \
