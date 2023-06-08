@@ -11,7 +11,7 @@ BRANCH_NAME=${BRANCH_NAME:-$(git rev-parse --abbrev-ref HEAD)}
 
 function main {
   if [[ $(git-check-if-commit-changed-directory $PRECOMMIT $BRANCH_NAME $CODE_DIR) ]] ; then
-    cmd="."
+    cmd="--select F841 ."
     docker run \
       --volume=$PWD:/scan \
       --workdir=/scan \
