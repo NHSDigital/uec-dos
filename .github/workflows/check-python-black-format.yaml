@@ -1,10 +1,10 @@
-name: Check Terraform Format
+name: Check Python Black Format
 
 on:
   workflow_call:
 
 jobs:
-  check-terraform-format:
+  check-python-black-format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -12,4 +12,4 @@ jobs:
           fetch-depth: 0
       - run: |
           export PRECOMMIT=false
-          ./scripts/githooks/terraform-pre-commit.sh
+          ./scripts/githooks/python-black-pre-commit.sh
