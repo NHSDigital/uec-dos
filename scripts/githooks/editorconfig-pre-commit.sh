@@ -40,7 +40,7 @@ function main() {
       --volume=$PWD:/check \
       mstruebing/editorconfig-checker:$image_version \
         ec \
-          --exclude '.git/'
+          --exclude '*'
 
   else
 
@@ -52,7 +52,7 @@ function main() {
           --volume=$PWD:/check \
           mstruebing/editorconfig-checker:$image_version \
             ec \
-              --exclude '.git/' \
+              --exclude '*' \
               "$file"
         [ $? != 0 ] && exit_code=1 ||:
       done < <(echo "$changed_files")
